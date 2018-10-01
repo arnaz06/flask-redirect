@@ -1,7 +1,9 @@
+from flask_frozen import Freezer
 from flask import Flask, jsonify, redirect, url_for
 from scrape import scrape
 
 app = Flask(__name__)
+freezer= Freezer(app)
 
 @app.route("/")
 def index():
@@ -10,5 +12,5 @@ def index():
 def coba():
   return jsonify({"about":"redirected"})
 if __name__== '__main__':
-  app.run(debug=True)
+  freezer.freezer()
 
