@@ -1,4 +1,0 @@
-Flask>=0.10.1
-frozen-flask
-BeautifulSoup=3.2.1
-beautifulsoup4=4.6.3
